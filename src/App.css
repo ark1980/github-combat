@@ -1,4 +1,5 @@
 .App {
+  margin: 0 auto;
   text-align: center;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -55,14 +56,25 @@ a {
   color: rgb(255, 255, 255);
 }
 
-.popular {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.popular ul li {
-  display: inline;
-  padding-left: 25px;
-  font-size: 1.2rem;
+li {
+  list-style: none;
+}
+.popular {
+  display: flex;
+  justify-content: center;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+}
+
+.languages li {
+  margin: 10px;
+  cursor: pointer;
 }

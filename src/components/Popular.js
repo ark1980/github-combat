@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
+import Languages from './Languages';
+import fetchPopularRepos from '../utils/api';
 
 class Popular extends Component {
+  state = {
+    selectedLanguage: "All"
+  }
+
+  onClickHandle = (lang) => {
+    this.setState({ selectedLanguage: lang });
+  }
+
   render () {
     return(
       <div className="popular">
-        <ul>
-          <li>Javascript</li>
-          <li>Ruby</li>
-          <li>Python</li>
-          <li>Java</li>
-          <li>CSS</li>
-        </ul>
+        <Languages
+          selectLanguage={this.state.selectedLanguage}
+          onSelect={this.onClickHandle}
+        />
       </div>
     )
   }
