@@ -9,10 +9,6 @@
   padding: 0 50px;
 }
 
-.app-logo h2{
-  color: rgb(53, 9, 9);
-}
-
 .App-header {
   display: flex;
   justify-content: space-around;
@@ -57,4 +53,16 @@ button {
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular ul li {
+  display: inline;
+  padding-left: 25px;
+  font-size: 1.2rem;
 }

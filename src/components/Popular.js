@@ -3,8 +3,14 @@ import React, { Component } from 'react';
 class Popular extends Component {
   render () {
     return(
-      <div>
-        <h3>Popular</h3>
+      <div className="popular">
+        <ul>
+          <li>Javascript</li>
+          <li>Ruby</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>CSS</li>
+        </ul>
       </div>
     )
   }
