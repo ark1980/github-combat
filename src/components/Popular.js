@@ -7,7 +7,7 @@ class Popular extends Component {
     selectedLanguage: "All"
   }
 
-  onClickHandle = (lang) => {
+  updateLanguage = (lang) => {
     this.setState({ selectedLanguage: lang });
   }
 
@@ -16,7 +16,7 @@ class Popular extends Component {
       <div className="popular">
         <Languages
           selectLanguage={this.state.selectedLanguage}
-          onSelect={this.onClickHandle}
+          onSelect={this.updateLanguage}
         />
       </div>
     )
