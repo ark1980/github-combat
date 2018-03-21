@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Languages = ({ selectLanguage, onSelect }) => {
-  const languages = ["All", "Javascript", "Java", "Python", "C#"]
+  const languages = ["All", "Javascript", "Java", "Python", "C#", "Ruby"];
   return (
    <div>
     <ul className="languages">

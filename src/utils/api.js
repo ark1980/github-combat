@@ -1,12 +1,15 @@
-import axios from 'axios';
+const axios = require('axios');
 
-module.export = {
+module.exports = {
   fetchPopularRepos: (language) => {
-    const encodedURL = window.encodedURL("https://api.github.com/search/repositories?q=stars:%3E1+language:java&sort=stars&order=desc&type=Repositories");
+    const encodedURI = window.encodeURI(`https://api.github.com/search/repositories?q=stars:>1+language:${language}&sort=stars&order=desc&type=Repositories`);
 
-    axios.get(encodedURL)
-    .then(response => (
-      response.data.items
-    ))
+    return axios.get(encodedURI)
+      .then(response => (
+        response.data.items
+      )
+    )
   }
-}
+};
+
+
