@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Battle from './components/Battle';
 import Popular from './components/Popular';
+import NotMatch from './components/NotMatch';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 
@@ -15,6 +16,7 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
           <Route path="/battle" component={Battle}/>
           <Route path="/popular" component={Popular}/>
+          <Route component={NotMatch} />
         </Switch>
       </div>
     );
