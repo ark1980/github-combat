@@ -26,7 +26,7 @@ class Battle extends Component {
     
     return (
       <div>
-        <div>
+        <div className="battle">
           {!playerOne && 
             <InputPlayer
               id='playerOne'

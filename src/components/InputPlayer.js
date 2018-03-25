@@ -24,7 +24,7 @@ class InputPlayer extends Component {
   render() {
     return(
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <form  className="inputPlayer" onSubmit={this.handleSubmit}>
           <label htmlFor="username">{this.props.label}</label>
           <input 
             type="text"

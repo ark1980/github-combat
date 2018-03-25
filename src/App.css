@@ -108,3 +108,30 @@ li {
   margin: 5px;
   padding: 0;
 }
+
+.battle {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+  height: 100vh;
+}
+
+.inputPlayer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputPlayer label {
+  font-size: 1.6rem;
+}
+
+.inputPlayer input {
+  width: 350px;
+  height: 35px;
+  padding: 0 5px;
+  border-radius: 3px;
+  margin: 10px 0;
+  border: 1px solid rgb(199, 199, 199);
+}
