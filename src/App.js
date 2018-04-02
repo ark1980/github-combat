@@ -14,7 +14,7 @@ class App extends Component {
         <Navbar />  
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/battle" component={Battle}/>
+          <Route exact path="/battle" component={Battle}/>
           <Route path="/popular" component={Popular}/>
           <Route component={NotMatch} />
         </Switch>
