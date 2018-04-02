@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InputPlayer from './InputPlayer';
-// import Link from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PlayerPreview from './PlayerPreview';
 
 class Battle extends Component {
@@ -36,6 +36,8 @@ class Battle extends Component {
     const playerTwo = this.state.playerTwoName;
     const playerOneImage = this.state.playerOneImage;
     const playerTwoImage = this.state.playerTwoImage;
+
+    const matchURL = `${this.props.match.url}/result`;
     
     return (
       <div>
@@ -75,12 +77,15 @@ class Battle extends Component {
               onReset={this.handleReset}
             />
           }
+        </div>
 
-        </div>
-        <div className="battle">
-            
-        </div>
-        {/* <Link to={}><button>Battle</button></Link> */}
+        {
+          playerOneImage && playerTwoImage && 
+          <NavLink to={matchURL}>
+            <button>Battle</button>
+          </NavLink>
+        }
+
       </div>
     )
   }
